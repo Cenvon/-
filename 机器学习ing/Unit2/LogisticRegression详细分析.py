@@ -20,7 +20,7 @@ x_train,x_test,y_train,y_test = train_test_split(
 logreg = LogisticRegression().fit(x_train,y_train)#C=1
 logreg100 = LogisticRegression(C=100).fit(x_train,y_train)#C=100
 logreg001 = LogisticRegression(C=0.01).fit(x_train,y_train)#C=0.01
-
+#图像化显示差异结果
 plt.plot(logreg.coef_.T,'o',label = "c=1")
 plt.plot(logreg100.coef_.T,'^',label = "c=100")
 plt.plot(logreg001.coef_.T,'v',label = "c=0.01")
