@@ -40,10 +40,10 @@ from sklearn.datasets import load_breast_cancer
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split
 
-# cancer = load_breast_cancer()
-# X_train,X_test,y_train,y_test = train_test_split(
-#     cancer.data,cancer.target,stratify = cancer.target,random_state = 42
-# )
+cancer = load_breast_cancer()
+X_train,X_test,y_train,y_test = train_test_split(
+    cancer.data,cancer.target,stratify = cancer.target,random_state = 42
+)
 #默认将树完全展开树的训练精度是1，但是测试精度却只有0.937
 # tree = DecisionTreeClassifier(random_state=0)
 # tree.fit(X_train,y_train)
