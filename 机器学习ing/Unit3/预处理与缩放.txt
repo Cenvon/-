@@ -23,8 +23,3 @@
     x=scale.fit(x).transform(X)
     x=sacle.fit_transform(x)
 
-4.降维、特征提取与流形学习
-    1>主成分分析(PCA)：
-        PCA是一种旋转数据集的方法，旋转后的特征在统计上不相关。
-        mglearn.plots.plot_pca_illustration() #P103
-        PCA另一个应用是特征提取，其背后的思想是，可以找到一种数据表示，比给定的原始表示更适合分析。
