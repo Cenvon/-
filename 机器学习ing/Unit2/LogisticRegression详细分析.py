@@ -4,6 +4,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 """
 LogisticRegression默认应用L2正则化
+L2正则化：若y=θ1+θ2*x+θ3*x^2+θ4*x^3
+        误差：J(θ)=[y(θ)-y]^2+[θ1^2+θ2^2+θ3^2+θ4^2]
 本次主要对正则化参数C的调整
 每次的训练通过下列两个打印出训练的得分
     print(logreg.score(x_train,y_train))
