@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.decomposition import PCA
 from sklearn.decomposition import NMF
-
+#PCA和NMF对比
 s = mglearn.datasets.make_signals()
 a = np.random.RandomState(0).uniform(size=(100,3))
 x= np.dot(s,a.T)
